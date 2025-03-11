@@ -9,7 +9,7 @@ a set of files to host geneweb on a Synology NAS
             <li>create the directory bases in it to match he volume mapping directory</li>
             <li>create container manager project, use the docker/geneweb/geneweb-run directory, use the existing compose file</li>
             <li>build the project</li>
-            <li>visit the newly created geneweb daemon at http://<ip of your NAS>:2317/
+            <li>visit the newly created geneweb daemon at http://[ip of your NAS]:2317/
         </ul>
     </li>
 </ul>
