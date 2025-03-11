@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  geneweb_run:
+    network_mode: bridge
+    container_name: geneweb-run
+    image: geneweb-run
+    build:
+      args:
+      # github user to use to clone the repo. Here https://github.com/geneweb/geneweb
+        USER: geneweb
+      # geneweb branch to chekout to compile it and build the docker image
+        BRANCH: master
+      dockerfile: ./geneweb-run.yml
+    ports:
+    # do not forget to open those ports in the firewall and/or use reverse proxy to access it from internet
+      - 2316:2316
+      - 2317:2317
+    volumes:
+    # volume to store bases
+      - /volume1/docker/geneweb/geneweb-run/bases:/usr/local/share/geneweb/share/data:rw
+    environment:
+    # default lang to use
+      GENEWEB_LANG: fr
+    # default database. it will be created if it does not exists
+      GENEWEB_DB: database
+    restart: 'unless-stopped'
