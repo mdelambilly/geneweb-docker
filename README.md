@@ -1,5 +1,3 @@
-$\color{Apricot}{The\ quick\ brown\ fox\ jumps\ over\ the\ lazy\ dog.}$
-
 # geneweb-docker
 
 a set of files to host geneweb on a **$\color{red}{Synology\ NAS}$** in a docker container or as a linux service
@@ -17,3 +15,13 @@ Use the _reverse proxy_ (in _login portal_) to link your URLs to the geneweb por
 * create a reversy proxy rule if needed
 
 ## geneweb-compil
+
+
+## interesting links
+* Markdown
+  * https://github.com/lifeparticle/Markdown-Cheatsheet/
+  * https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+* Emoji
+  * https://gist.github.com/rxaviers/7360908
+* NAS security
+  * https://mariushosting.com/how-to-protect-and-secure-your-synology-nas-from-attacks/
