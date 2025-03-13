@@ -19,6 +19,19 @@ a set of files to host geneweb on a **$\color{red}{Synology\ NAS}$** in a docker
 2. clean the project in container manager. This will delete the geneweb-run container.
 3. delete the geneweb-run image in container manager
 4. build the project
+
+Deployments can be sped up the  by pulling those two images:
+- ocaml/opam:debian-12-ocaml-4.14
+- debian:12-slim
+
+this can be done in Container Manager app or by using the following docker command line with the Task Scheduler
+```
+docker pull ocaml/opam:debian-12-ocaml-4.14
+```
+```
+docker pull debian:12-slim
+```
+
 </details>
 
 <details>
@@ -32,8 +45,7 @@ a set of files to host geneweb on a **$\color{red}{Synology\ NAS}$** in a docker
   <summary>Interesting links</summary>
 
 -  Markdown
-    - [github doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-)
+    - [github doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
     - [Markdown Editor](https://binarytree.dev/markdown/me)
     - [Table Of Content](https://binarytree.dev/markdown/toc)
     - [Markdown Table Generator](https://binarytree.dev/markdown/md_table_generator)
@@ -41,5 +53,6 @@ a set of files to host geneweb on a **$\color{red}{Synology\ NAS}$** in a docker
     - [Emoji](https://gist.github.com/rxaviers/7360908)
 - NAS Security
     - [Protec your NAS in english](https://mariushosting.com/how-to-protect-and-secure-your-synology-nas-from-attacks/)
+    - [Secure your NAS in french](https://news.infomaniak.com/10-methodes-pour-securiser-lacces-de-votre-nas-synology/)
 </details>
 
