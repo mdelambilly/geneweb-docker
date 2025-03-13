@@ -10,7 +10,7 @@ Use the _reverse proxy_ (in _login portal_) to link your URLs to the geneweb por
 
 * create a directory geneweb in the docker shared directory
 * copy the directory geneweb-run in it
-  * create the directory bases in it to match he volume mapping directory
+* create the directory bases in it to match he volume mapping directory
 * create container manager project, use the docker/geneweb/geneweb-run directory, use the existing compose file
 * customize arguments in the compose file in container manager and build the project
 * visit the newly created geneweb daemon at http:// $\color{green}{\<ip\ of\ your\ NAS\>}$ :2317
