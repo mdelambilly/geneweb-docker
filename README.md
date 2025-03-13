@@ -1,13 +1,8 @@
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-b { color: Blue }
-</style>
+$\color{Apricot}{The\ quick\ brown\ fox\ jumps\ over\ the\ lazy\ dog.}$
 
 # geneweb-docker
 
-a set of files to host geneweb on a **<r><ins>Synology NAS</r></ins>** in a docker container or as a linux service
+a set of files to host geneweb on a **$\color{red}{Synology\ NAS}$** in a docker container or as a linux service
 
 ## geneweb-run 
 contains a docker compose project to create host geneweb in <r><ins>container manager</ins></r>.  
@@ -18,6 +13,6 @@ Use the _reverse proxy_ (in _login portal_) to link your URLs to the geneweb por
 * create the directory bases in it to match he volume mapping directory
 * create container manager project, use the docker/geneweb/geneweb-run directory, use the existing compose file
 * build the project
-* visit the newly created geneweb daemon at http://_<g>[ip of your NAS]</g>_:2317/
+* visit the newly created geneweb daemon at http:// $\color{green}{\<ip\ of\ your\ NAS\>}$ :2317
 
 ## geneweb-compil
